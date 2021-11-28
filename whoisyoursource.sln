@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "whosyoursource", "..\src\whosyoursource.fsproj", "{FEE88355-6104-4C2C-9C57-9DF8CE83AA8A}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "whoisyoursource", ".\src\whoisyoursource.fsproj", "{FEE88355-6104-4C2C-9C57-9DF8CE83AA8A}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "whoisyoursource.tests", "..\tests\whoisyoursource.tests.fsproj", "{7DB21A88-15E2-457D-9679-1360FE9BBCC5}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "whoisyoursource.tests", ".\tests\whoisyoursource.tests.fsproj", "{7DB21A88-15E2-457D-9679-1360FE9BBCC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
