@@ -99,13 +99,21 @@ let getSourceLinks (htmlDocument: HtmlDocument, phrases: List<string>) =
                 Phrase = pp.Phrase
                 Distance = lt.Index - pp.Index |> Math.Abs
             })
-            |> Seq.reduce(fun a b ->
-                match a.Distance <= b.Distance with
-                | true -> a
-                | false -> b)
+            |> Seq.fold(fun a b ->
+                match a.Distance = -1 with
+                | true -> b
+                | false ->
+                    match a.Distance <= b.Distance with
+                    | true -> a
+                    | flase -> b
+                ) {
+                    Link = {
+                        Link = ""
+                        Text = ""
+                    }
+                    Phrase = Phrase("")
+                    Distance = -1
+                }
             )
-    |> Seq.reduce(fun a b ->
-        match a.Distance <= b.Distance with
-        | true -> a
-        | false -> b)
+
     

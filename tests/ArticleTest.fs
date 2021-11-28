@@ -55,6 +55,9 @@ let ``getSourceLink should return the link that the article is using for a sourc
         Phrase = Phrase("according to")
         Distance = 13
     }
-    let lpd = getSourceLinks (htmlDocument, sourcePhrases)
+    let links = getSourceLinks (htmlDocument, sourcePhrases)
+    Assert.NotEmpty(links)
+    let lpd =
+        links
+        |> Seq.head
     Assert.Equal(want, lpd)
-
