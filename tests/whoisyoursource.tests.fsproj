@@ -12,7 +12,6 @@
     <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
     <PackageReference Include="FSharp.Data" Version="4.2.5" />
@@ -27,6 +26,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\whosyoursource.fsproj" />
+    <ProjectReference Include="..\src\whoisyoursource.fsproj" />
   </ItemGroup>
 </Project>
